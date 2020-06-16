@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F11B1A1A"
+    tools:context=".ProfileActivity">
+
+    <include
+        layout="@layout/groupchat_app_bar_layout"
+        android:id="@+id/ProfileActivityToolbar"
+        >
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/set_profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="@android:dimen/thumbnail_height"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/profile_image"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="7dp" />
+            <EditText
+                android:id="@+id/set_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/set_profile_image"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/inputs"
+                android:drawableStart="@drawable/edit_profile"
+                android:hint="Username"
+                android:inputType="textMultiLine"
+                android:padding="6dp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/set_profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/set_username"
+                android:inputType="textMultiLine"
+                android:hint="User Bio"
+                android:textAlignment="center"
+                android:drawableStart="@drawable/edit_status"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                android:background="@drawable/inputs"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="6dp"
+                android:layout_marginTop="10dp"
+                />
+            <Button
+                android:id="@+id/update_settings_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/set_profile_status"
+                android:inputType="textMultiLine"
+                android:text="Update"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                android:background="@drawable/buttons"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="6dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

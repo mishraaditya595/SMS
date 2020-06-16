@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/CreateGroupButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Create Group"
+        android:textColor="@color/cardview_light_background"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="#556200EE"
+        />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_below="@+id/CreateGroupButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        />
+
+
+</RelativeLayout>
